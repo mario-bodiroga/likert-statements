@@ -1,0 +1,143 @@
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v14-latin-regular.woff2') format('woff2'),
+       url('../fonts/lato-v14-latin-regular.woff') format('woff'),
+       url('../fonts/lato-v14-latin-regular.ttf') format('truetype');       
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v14-latin-700.woff2') format('woff2'),
+       url('../fonts/lato-v14-latin-700.woff') format('woff'),
+       url('../fonts/lato-v14-latin-700.ttf') format('truetype');       
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,		
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  min-height: 1280px;
+  font-weight: 300;
+  color: #333333;
+}
+
+p,
+h1,
+h2,
+h3,
+h4{
+	margin: 0;
+	font-weight: 400;
+}
+
+#intro {
+	max-width: 40rem;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.intro__hed {
+	font-size: 1.4rem;
+	margin: 1.5rem auto;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.intro__dek {
+	font-size: 1.2rem;
+}
+
+/* demo */
+
+
+
+/* scrollama */
+
+#scroll {
+	position: relative;
+	border-top: 1px dashed #000;
+	border-bottom: 1px dashed #000;
+}
+
+.scroll__graphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: auto;
+	background-color: #fff;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.scroll__graphic.is-fixed {
+	position: fixed;
+}
+
+.scroll__graphic.is-bottom {
+	bottom: 0;
+	top: auto;
+}
+
+.chart {
+	position: absolute;
+	right: 1rem;
+	top: 50%;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background-color: #DBDBDB;
+	border: 1px;
+}
+
+.chart p {
+	text-align: center;
+	padding: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 8rem;
+	font-weight: 900;
+	color: #666;
+}
+
+.scroll__text {
+	position: relative;
+	padding: 0 1rem;
+	max-width: 30rem;
+	width: 33%;
+}
+
+.step {
+	margin: 2rem auto;
+	border: 1px;
+	color: #c0c0c0;
+}
+
+.step.is-active {
+	color: #333333;
+}
+
+.step p {
+	text-align: left;
+	padding: 1rem;
+	font-size: 1rem;
+}
